@@ -10,13 +10,22 @@ namespace CompleteAssesment1.Test
         LogicClass Logic = new LogicClass();
 
        [TestMethod]
-        public void TestSpinning()
+        public void SpinbtTest()
         {
-            int testInt = Logic.Spinbt();
-            Assert.IsTrue();
+           
+            Assert.Fail();
         }
-
         private int Spinbt()
+        {
+            throw new NotImplementedException();
+        }
+        [TestMethod]
+        public void LoadbtTest()
+        {
+
+            Assert.Fail();
+        }
+        private int Loadbt()
         {
             throw new NotImplementedException();
         }

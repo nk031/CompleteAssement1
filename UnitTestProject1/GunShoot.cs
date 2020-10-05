@@ -8,13 +8,24 @@ namespace CompleteAssesment1.Test
     {
         LogicClass Logic = new LogicClass();
         [TestMethod]
-        public void TestShootATHead()
+        public void GunShootBtTest()
         {
-            int testInt = Logic.GunShoot();
-            Assert.IsTrue();
+            
+            Assert.Fail();
         }
 
-        private int GunShoot()
+        private int GunShootBt()
+        {
+            throw new NotImplementedException();
+        }
+        [TestMethod]
+        public void ShootAwayBtTest()
+        {
+
+            Assert.Fail();
+        }
+
+        private int ShootAwayBt()
         {
             throw new NotImplementedException();
         }
