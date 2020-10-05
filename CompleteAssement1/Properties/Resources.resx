@@ -121,7 +121,16 @@
   <data name="AngerPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blog-img-02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Gun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GunBc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apps.58350.13510798884388011.5c354f20-f2b0-4392-8bb3-88d363caa6e0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GunSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\40_smith_wesson_8x_gunshot-mike-koenig.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="load" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -23,7 +23,7 @@ namespace CompleteAssement1
 
         private void GunShootBt_Click(object sender, EventArgs e)
         {
-
+            ScoreBox.Text = GunShootBt.Text;
             SoundPlayer sound = new SoundPlayer(CompleteAssement1.Properties.Resources.GunSound);
             sound.Play();
             Logic.GunShootBt();
@@ -38,9 +38,25 @@ namespace CompleteAssement1
 
         private void ShootAwayBt_Click(object sender, EventArgs e)
         {
-
+            
             Logic.ShootAwayBt();
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Logic.ScoreBox();
+        }
+
+        private void LoadBt_Click(object sender, EventArgs e)
+        {
+            
+            Logic.LoadBt();
+        }
+
+        private void SpinBt_Click(object sender, EventArgs e)
+        {
+            Logic.Spinbt();
         }
     }
 }
