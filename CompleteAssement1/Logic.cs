@@ -11,78 +11,88 @@ namespace CompleteAssement1
 {
     public class LogicClass
     {
-        int Bullet = 0;
-        int Chances = 2;
+        int shells = 0;
+        int prospect = 2;
 
 
         public void GunShootBt()
         {
-            //If the bullet is in the barrel, shoot it at head
-            if (Bullet == 5)
+            //Shoot at head, if shells is in the barrel else it will just Rotate
+            if (shells == 5)
             {
                 MessageBox.Show("You are dead!");
             }
             else
             {
                 MessageBox.Show("The revolver just rotated");
-                Bullet = Bullet + 1;
+                shells = shells + 1;
             }
         }
 
         public void ShootAwayBt()
         {
-            //if I have chances
-            
-            if (Chances > 0)
-            {
-                if (Bullet == 5)
-                {
+            //if i have any Possibility
 
+            
+            if (prospect > 0)
+            {
+                if (shells == 5)
+                {
+                   
                     MessageBox.Show("You survived");
 
                 }
                 else
                 {
                     MessageBox.Show("The revolver just rotated");
-                    Bullet = Bullet + 1;
+                    shells = shells + 1;
+                   
                 }
+               
+
             }
-            //If I don't have any chances left
+            //If I don't get any Possibility last
             else
             {
                 MessageBox.Show("You are dead!");
 
             }
 
-            Chances = Chances - 1;
+            prospect = prospect - 1;
         }
 
 
         public void Spinbt()
+            //Spin the Revolver to get a Random position 
         {
             Random rand = new Random();
-            Bullet = rand.Next(0, 6);
+            shells = rand.Next(0, 6);
             MessageBox.Show("Gun Spinning");
 
 
         }
 
         public void ScoreBox()
+            //Score can show in box if win/loss
         {
-            private static int AddNumber(int v1, object n1, int v2, object n2)
+            
+
+        }
+        private static int AddNumber(int v1, object n1, int v2, object n2)
             {
                 int output = v1 + v2;
                 return output;
             }
 
-        }
+       
 
        
 
 
         public void LoadBt()
+            //Just Rotate the gun for Loading
         {
-            Bullet = 0;
+            shells = 0;
             MessageBox.Show("Gun Rotated");
         }
     }
