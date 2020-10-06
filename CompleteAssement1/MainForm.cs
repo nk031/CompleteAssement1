@@ -43,10 +43,7 @@ namespace CompleteAssement1
 
         }
 
-       private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-           Logic.ScoreBox();
-        }
+      
 
         private void LoadBt_Click(object sender, EventArgs e)
         {
@@ -57,6 +54,11 @@ namespace CompleteAssement1
         private void SpinBt_Click(object sender, EventArgs e)
         {
             Logic.Spinbt();
+        }
+
+        private void PlayAgainBt_Click(object sender, EventArgs e)
+        {
+            Logic.PlayAgainBt();
         }
     }
 }

@@ -11,21 +11,21 @@ namespace CompleteAssement1
 {
     public class LogicClass
     {
-        int shells = 0;
-        int prospect = 2;
+        int Shells = 0;
+        int Prospect = 2;
 
 
         public void GunShootBt()
         {
-            //Shoot at head, if shells is in the barrel else it will just Rotate
-            if (shells == 5)
+            //Shoot at head, if Shells is in the barrel else it will just Rotate
+            if (Shells == 5)
             {
                 MessageBox.Show("You are dead!");
             }
             else
             {
                 MessageBox.Show("The revolver just rotated");
-                shells = shells + 1;
+                Shells = Shells + 1;
             }
         }
 
@@ -34,18 +34,18 @@ namespace CompleteAssement1
             //if i have any Possibility
 
             
-            if (prospect > 0)
+            if (Prospect > 0)
             {
-                if (shells == 5)
+                if (Shells == 5)
                 {
                    
-                    MessageBox.Show("You survived");
+                    MessageBox.Show("You survived . \nYour Score : " + Shells+ (Shells ==5 ?"\n \n You Gain" : "\n You failure"));
 
                 }
                 else
                 {
                     MessageBox.Show("The revolver just rotated");
-                    shells = shells + 1;
+                    Shells = Shells + 1;
                    
                 }
                
@@ -58,7 +58,7 @@ namespace CompleteAssement1
 
             }
 
-            prospect = prospect - 1;
+            Prospect = Prospect - 1;
         }
 
 
@@ -66,23 +66,14 @@ namespace CompleteAssement1
             //Spin the Revolver to get a Random position 
         {
             Random rand = new Random();
-            shells = rand.Next(0, 6);
+            Shells = rand.Next(0, 6);
             MessageBox.Show("Gun Spinning");
 
 
         }
 
-        public void ScoreBox()
-            //Score can show in box if win/loss
-        {
-            
-
-        }
-        private static int AddNumber(int v1, object n1, int v2, object n2)
-            {
-                int output = v1 + v2;
-                return output;
-            }
+       
+       
 
        
 
@@ -92,8 +83,15 @@ namespace CompleteAssement1
         public void LoadBt()
             //Just Rotate the gun for Loading
         {
-            shells = 0;
-            MessageBox.Show("Gun Rotated");
+            Shells = 0;
+            MessageBox.Show("Gun Loaded");
+        }
+        public void PlayAgainBt()
+        {
+            // if You Want to Replay 
+            Shells = 0;
+            Prospect = 2;
+            MessageBox.Show("Game begins");
         }
     }
 }

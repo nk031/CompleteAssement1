@@ -33,6 +33,7 @@
             this.SpinBt = new System.Windows.Forms.Button();
             this.GunShootBt = new System.Windows.Forms.Button();
             this.BackgroundPic = new System.Windows.Forms.PictureBox();
+            this.PlayAgainBt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BackgroundPic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,11 +87,22 @@
             this.BackgroundPic.TabIndex = 0;
             this.BackgroundPic.TabStop = false;
             // 
+            // PlayAgainBt
+            // 
+            this.PlayAgainBt.Location = new System.Drawing.Point(516, 151);
+            this.PlayAgainBt.Name = "PlayAgainBt";
+            this.PlayAgainBt.Size = new System.Drawing.Size(179, 61);
+            this.PlayAgainBt.TabIndex = 7;
+            this.PlayAgainBt.Text = "Play Again";
+            this.PlayAgainBt.UseVisualStyleBackColor = true;
+            this.PlayAgainBt.Click += new System.EventHandler(this.PlayAgainBt_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(707, 450);
+            this.Controls.Add(this.PlayAgainBt);
             this.Controls.Add(this.SpinBt);
             this.Controls.Add(this.LoadBt);
             this.Controls.Add(this.ShootAwayBt);
@@ -110,6 +122,7 @@
         private System.Windows.Forms.Button ShootAwayBt;
         private System.Windows.Forms.Button LoadBt;
         private System.Windows.Forms.Button SpinBt;
+        private System.Windows.Forms.Button PlayAgainBt;
     }
 }
 
